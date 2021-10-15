@@ -60,7 +60,8 @@
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.1",
     "eslint-plugin-react": "^7.26.1",
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -70,8 +71,6 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "post-merge": "./.postmergerc",
       "pre-commit": "lint-staged"
     }
   }
