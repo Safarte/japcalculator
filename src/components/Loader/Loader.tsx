@@ -14,7 +14,7 @@ interface OwnProps {
 const SIZE_TYPES: { [k in SizeType]: number } = {
   small: 24,
   medium: 48,
-  large: 80
+  large: 80,
 };
 
 type Props = OwnProps;
@@ -25,7 +25,7 @@ export const Loader: React.FC<Props> = (props: Props) => {
 };
 
 const styles = (theme: CustomTheme): Record<ClassNames, CSSProperties> => ({
-  container: {}
+  container: {},
 });
 
 export default withStyles(styles)(Loader);
