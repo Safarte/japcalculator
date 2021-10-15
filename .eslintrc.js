@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
+    // "plugin:@typescript-eslint/recommended",
   ],
   rules: {
     // 'react-hooks/exhaustive-deps': 'off',
@@ -11,7 +11,7 @@ module.exports = {
     "react/jsx-key": "off", // To turn on at some point
     "react/display-name": "off",
     "react/no-deprecated": "off",
-    "@typescript-eslint/no-explicit-any": "off",
+    // "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-empty-function": "off", // To set to warn
     "@typescript-eslint/no-unused-vars": "off", // To set to warn
