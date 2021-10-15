@@ -24,8 +24,8 @@ const styles = (theme: CustomTheme): Record<ClassNames, any> => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: props.height,
-    width: props.width
-  })
+    width: props.width,
+  }),
 });
 
 export default withStyles(styles)(Image);
