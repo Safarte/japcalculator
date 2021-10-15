@@ -16,13 +16,13 @@ import { restaurantSaga } from "./restaurant/restaurant.sagas";
 
 const rootReducer = combineReducers({
   router: connectRouter(history),
-  [RESTAURANT_STATE_SLICE_NAME]: restaurantReducer
+  [RESTAURANT_STATE_SLICE_NAME]: restaurantReducer,
 });
 
 const initialState = {};
 const sagaMiddleware = createSagaMiddleware();
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
+// /* eslint-disable @typescript-eslint/no-explicit-any */
 const composeEnhancers =
   process.env.NODE_ENV !== "production" &&
   typeof window === "object" &&
