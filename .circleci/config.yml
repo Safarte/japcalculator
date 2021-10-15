@@ -82,4 +82,5 @@ workflows:
   node-tests:
     jobs:
       - build-test
-      - audit-test
+      - audit
+      - lint
