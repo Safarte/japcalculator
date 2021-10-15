@@ -50,7 +50,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run audit!
-      - run: yarn audit
+      - run: yarn audit || true
       - run: npx yarn-audit-fix
 
 workflows:
