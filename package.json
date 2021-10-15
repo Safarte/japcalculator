@@ -36,7 +36,8 @@
     "eject": "react-scripts eject",
     "bootstrap": "node ./bootstrap-fauna-database.js",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
-    "lint-fix": "eslint './src/**/*.{js,jsx,ts,tsx}' --fix"
+    "lint-fix": "eslint './src/**/*.{js,jsx,ts,tsx}' --fix",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -68,10 +69,5 @@
       "eslint --ext .js --ext .ts --ext .jsx --ext .tsx --fix",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
